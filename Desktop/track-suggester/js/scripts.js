@@ -6,5 +6,16 @@ $("#form#survey").submit(function(event) {
     var preference = $("select#preference").val();
     var environment = $("select#environment").val();
     var web-apps = $("select#web-apps").val();
-  }
-})
+
+    if (preference === "Back-End" && learning === "yes");
+      alert("Check out PHP!!"); }
+      $("PHP").show();
+    } else if (environment === "Yes" && experience === novice) {
+      alert("Give C# a try.");
+      $("C#").show();
+    } else if (web-apps === "Yes" && experience = none) {
+      alert("You will like Ruby!"); }
+      $("Ruby").show();
+    }
+  });
+});
