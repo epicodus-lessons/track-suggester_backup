@@ -11,9 +11,26 @@ body {
   font-style: oblique;
 }
 .container {
-  text-indent: 3px;
   text-align: left;
+}
 
+.col1 {
+  text-indent: 3px;
+  float: left;
+  padding: 2px;
+  margin: 2px;
+}
+.col2 {
+  text-indent: 3px;
+  float: left;
+  padding: 2px;
+  margin: 2px;
+}
+.col3 {
+  text-indent: 3px;
+  float: left;
+  padding: 2px;
+  margin: 2px;
 }
 .col-md-1 {
   text-align: left;
@@ -31,23 +48,35 @@ p {
   font-weight: bold;
   font-family: fantasy;
   font-size: 15px;
-
 }
 .logo1 {
-  padding: 5px;
-  margin: 5px;
-  float: center;
+  padding: 2px;
+  margin: 2px;
+  float: left;
   display: inline-block;
 }
 .logo2 {
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
   float: center;
-  display: inline-block;
+  display: in-line block;
 }
 .logo3 {
-  padding: 5px;
-  margin: 5px;
-  float: center;
+  padding: 2px;
+  margin: 2px;
+  float: right;
   display: inline-block;
+}
+#php {
+  display: none;
+}
+#c-sharp {
+  display: none;
+}
+#ruby {
+  display: none;
+}
+.move {
+  text-align: left;
+  float: left;
 }
