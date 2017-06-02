@@ -12,7 +12,7 @@ $("#form#survey").submit(function(event) {
       $("PHP").show();
     } else if (environment === "Yes" && experience === novice) {
       alert("Give C# a try.");
-      $("C#").show();
+      $("C-sharp").show();
     } else if (web-apps === "Yes" && experience = none) {
       alert("You will like Ruby!"); }
       $("Ruby").show();

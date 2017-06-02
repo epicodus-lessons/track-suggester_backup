@@ -11,47 +11,66 @@
     <body>
     <div class="container">
       <div class="jumbotron">
-        <p>Which program language is a good fit for me?</p>
-        <h4>Take this survey to find out!</h4>
+        <h3>Which program language is a good fit for me?</h3>
+        <h4>**** Take this survey to find out! ****</h4>
       </div>
       <form id="survey">
-        <label for="experience">What is your level of experience?<</label>
+      <p>Please select an option from each dropdown menu that most closely match your preference. If more than one option matches, you will likely find yourself signing up for more than one computer programming class.</p>
+      <div class="col-md-1">
+        <label for="experience">1.  What is your level of experience?</label>
         <select id="experience">
           <option value="none">None</option>
           <option value="novice">Novice</option>
           <option value="veteran">Veteran</option>
         </select>
-        <label for="learning">Do you enjoy learning?<</label>
+      </div>
+      <div class="col-md-1">
+        <label for="learning">2.  Do you enjoy learning?</label>
         <select id="learning">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
-        <label for="preference">Do you prefer front-end or back-end?<</label>
+      </div>
+      <div class="col-md-1">
+        <label for="preference">3.  Do you prefer front-end or back-end?</label>
         <select id="preference">
           <option value="front-end">Front-End</option>
           <option value="back-end">Back-End</option>
-          <option value="ruby">Ruby</option>
         </select>
-        <label for="environment">Do you like to work in a big business environment?<</label>
+      </div>
+      <div class="col-md-1">
+        <label for="environment">4.  Do you like to work in a big business environment?</label>
         <select id="environment">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
-        <label for="web-apps">Are you interested in interactive web apps?<</label>
+      </div>
+      <div class="col-md-1">
+        <label for="web-apps">5.  Are you interested in interactive web apps?</label>
         <select id="web-apps">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
+      </div>
+      <div class="col-md-1">
         <button type="submit" class="btn">Best Fit!</button>
+      </div>
       </form>
-      <div id=PHP>
-        <img src="img/php.jpg" alt="PHP">
-      </div>
-      <div id=C#>
-        <img src="img/c#.png" alt="C#">
-      </div>
-      <div id=Ruby>
-        <img src="img/ruby.jpg" alt="Ruby">
+        <div class=container>
+          <div id=PHP>
+            <img src="img/php.jpg" alt="PHP">
+            </div>
+          </div>
+        <div class=container>
+          <div id=C-sharp>
+            <img src="img/c.jpg" alt="C-sharp">
+          </div>
+        </div>
+        <div class=container>
+          <div id=Ruby>
+            <img src="img/ruby.jpg" alt="Ruby">
+          </div>
+        </div>
       </div>
     </div>
 
