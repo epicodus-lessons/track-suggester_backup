@@ -1,0 +1,343 @@
+Last login: Fri Jun  2 07:14:34 on console
+Epicodus-8A:~ Guest$ git config --global user.name "Rena Rallis"
+Epicodus-8A:~ Guest$ git config --global user.email renarallis@msn.com
+Epicodus-8A:~ Guest$ git init
+Initialized empty Git repository in /Users/Guest/.git/
+Epicodus-8A:~ Guest$ ls -a
+.			.composer		Documents
+..			.gemrc			Downloads
+.CFUserTextEncoding	.git			Library
+.DS_Store		.gitconfig		Movies
+.Trash			.gitignore_global	Music
+.atom			.railsrc		Pictures
+.bash_profile		.rspec			Public
+.bash_sessions		Desktop
+Epicodus-8A:~ Guest$ cd .git
+Epicodus-8A:.git Guest$ ls
+HEAD		description	info		refs
+config		hooks		objects
+Epicodus-8A:.git Guest$ cd ..
+Epicodus-8A:~ Guest$ cd desktop
+Epicodus-8A:desktop Guest$ mkdir track-suggester
+Epicodus-8A:desktop Guest$ cd track-suggester
+Epicodus-8A:track-suggester Guest$ mkdir css js img
+Epicodus-8A:track-suggester Guest$ touch index.html
+Epicodus-8A:track-suggester Guest$ touch README.md
+Epicodus-8A:track-suggester Guest$ touch css/styles.css js/scripts.js
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   css/styles.css
+	new file:   index.html
+	new file:   js/scripts.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../.CFUserTextEncoding
+	../../.atom/
+	../../.bash_profile
+	../../.bash_sessions/
+	../../.composer/
+	../../.gemrc
+	../../.gitconfig
+	../../.gitignore_global
+	../../.railsrc
+	../../.rspec
+	../.localized
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+
+Epicodus-8A:track-suggester Guest$ git commit -m "add prject structure"
+[master (root-commit) 8cd9022] add prject structure
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/track-suggester/README.md
+ create mode 100644 Desktop/track-suggester/css/styles.css
+ create mode 100644 Desktop/track-suggester/index.html
+ create mode 100644 Desktop/track-suggester/js/scripts.js
+Epicodus-8A:track-suggester Guest$ git remote add rr https://github.com/RenRall/track-suggester.git
+Epicodus-8A:track-suggester Guest$ git remote -v
+rr	https://github.com/RenRall/track-suggester.git (fetch)
+rr	https://github.com/RenRall/track-suggester.git (push)
+Epicodus-8A:track-suggester Guest$ atom .
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "add container and jumbotron to begin project outline"
+[master d3cda7a] add container and jumbotron to begin project outline
+ 1 file changed, 21 insertions(+)
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "use form id to add survey questions"
+[master 0a8279c] use form id to add survey questions
+ 1 file changed, 29 insertions(+), 2 deletions(-)
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "add div id to include possible survey response options"
+[master b862b1f] add div id to include possible survey response options
+ 1 file changed, 17 insertions(+), 9 deletions(-)
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "add document ready function to include variables"
+[master 61ca7ba] add document ready function to include variables
+ 1 file changed, 10 insertions(+)
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "add logo images for php, c#, ruby"
+[master 6bf6ba7] add logo images for php, c#, ruby
+ 5 files changed, 19 insertions(+), 5 deletions(-)
+ create mode 100644 Desktop/track-suggester/img/c#.png
+ create mode 100644 Desktop/track-suggester/img/php.jpg
+ create mode 100644 Desktop/track-suggester/img/ruby.jpg
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "add css and bootstrap styling"
+[master 4bbda7f] add css and bootstrap styling
+ 5 files changed, 71 insertions(+), 17 deletions(-)
+ delete mode 100644 Desktop/track-suggester/img/c#.png
+ create mode 100644 Desktop/track-suggester/img/c.jpg
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "modify image size to make the images of logos more uniform, lonk to epicodus home page"
+[master 5bed783] modify image size to make the images of logos more uniform, lonk to epicodus home page
+ 6 files changed, 28 insertions(+), 7 deletions(-)
+ create mode 100644 Desktop/track-suggester/img/background.jpg
+ rewrite Desktop/track-suggester/img/c.jpg (100%)
+ rewrite Desktop/track-suggester/img/php.jpg (99%)
+ rewrite Desktop/track-suggester/img/ruby.jpg (99%)
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "generate README.md"
+[master 508c104] generate README.md
+ 3 files changed, 25 insertions(+), 4 deletions(-)
+Epicodus-8A:track-suggester Guest$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   css/styles.css
+	modified:   index.html
+	modified:   js/scripts.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../.CFUserTextEncoding
+	../../.atom/
+	../../.bash_profile
+	../../.bash_sessions/
+	../../.composer/
+	../../.gemrc
+	../../.gitconfig
+	../../.gitignore_global
+	../../.railsrc
+	../../.rspec
+	../.localized
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Epicodus-8A:track-suggester Guest$ git log
+commit 508c104383f3f10131bd2951d44109ffdfc33b7e
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 14:00:40 2017 -0700
+
+    generate README.md
+
+commit 5bed7832e8762f0a7cd048b7bb467f9944162b31
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 13:24:45 2017 -0700
+
+    modify image size to make the images of logos more uniform, lonk to epicodus home page
+
+commit 4bbda7feb6258b789e82cdd2cafc5d9382e9a753
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 12:08:32 2017 -0700
+
+    add css and bootstrap styling
+
+commit 6bf6ba76a86eadef37449b8a0f07de151a1f2b99
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 11:03:42 2017 -0700
+
+    add logo images for php, c#, ruby
+
+commit 61ca7ba5a1a5a012ec6670ad15994880c3a72107
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 09:57:12 2017 -0700
+
+    add document ready function to include variables
+
+commit b862b1fde10036535353d9d813dca5f863b29f03
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 09:41:50 2017 -0700
+
+    add div id to include possible survey response options
+
+commit 0a8279ceb9b66ef60912b17de2da5330baa7ef1e
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 09:24:47 2017 -0700
+
+    use form id to add survey questions
+
+commit d3cda7a8d94f5ddfd6a2cbc1dc05d6598d1f83ac
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 09:05:25 2017 -0700
+
+    add container and jumbotron to begin project outline
+
+commit 8cd9022791fc89547d32bb6a81bde43a42014542
+Author: Rena Rallis <renarallis@msn.com>
+Date:   Fri Jun 2 08:23:28 2017 -0700
+
+    add prject structure
+Epicodus-8A:track-suggester Guest$ git commit -m "check styling and debug issues"
+On branch master
+Changes not staged for commit:
+	modified:   css/styles.css
+	modified:   index.html
+	modified:   js/scripts.js
+
+Untracked files:
+	../../.CFUserTextEncoding
+	../../.atom/
+	../../.bash_profile
+	../../.bash_sessions/
+	../../.composer/
+	../../.gemrc
+	../../.gitconfig
+	../../.gitignore_global
+	../../.railsrc
+	../../.rspec
+	../.localized
+	../../Documents/
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+
+no changes added to commit
+Epicodus-8A:track-suggester Guest$ cd desktop
+-bash: cd: desktop: No such file or directory
+Epicodus-8A:track-suggester Guest$ cd ~
+Epicodus-8A:~ Guest$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Desktop/track-suggester/css/styles.css
+	modified:   Desktop/track-suggester/index.html
+	modified:   Desktop/track-suggester/js/scripts.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.atom/
+	.bash_profile
+	.bash_sessions/
+	.composer/
+	.gemrc
+	.gitconfig
+	.gitignore_global
+	.railsrc
+	.rspec
+	Desktop/.localized
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Epicodus-8A:~ Guest$ cd track-suggester
+-bash: cd: track-suggester: No such file or directory
+Epicodus-8A:~ Guest$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Desktop/track-suggester/css/styles.css
+	modified:   Desktop/track-suggester/index.html
+	modified:   Desktop/track-suggester/js/scripts.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.atom/
+	.bash_profile
+	.bash_sessions/
+	.composer/
+	.gemrc
+	.gitconfig
+	.gitignore_global
+	.railsrc
+	.rspec
+	Desktop/.localized
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Epicodus-8A:~ Guest$ pwd
+/Users/Guest
+Epicodus-8A:~ Guest$ cd desktop
+Epicodus-8A:desktop Guest$ cd track-suggester
+Epicodus-8A:track-suggester Guest$ git remote add rr https://github.com/RenRall/track-suggester.git
+fatal: remote rr already exists.
+Epicodus-8A:track-suggester Guest$ git push rr master
+Username for 'https://github.com': RenRall
+Password for 'https://RenRall@github.com': 
+Counting objects: 70, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (70/70), 44.69 KiB | 0 bytes/s, done.
+Total 70 (delta 12), reused 0 (delta 0)
+remote: Resolving deltas: 100% (12/12), done.
+To https://github.com/RenRall/track-suggester.git
+ * [new branch]      master -> master
+Epicodus-8A:track-suggester Guest$ git remote -v
+rr	https://github.com/RenRall/track-suggester.git (fetch)
+rr	https://github.com/RenRall/track-suggester.git (push)
+Epicodus-8A:track-suggester Guest$ git add .
+Epicodus-8A:track-suggester Guest$ git commit -m "modify css styling"
+[master ac22120] modify css styling
+ 3 files changed, 129 insertions(+), 98 deletions(-)
+ rewrite Desktop/track-suggester/index.html (79%)
+Epicodus-8A:track-suggester Guest$ git push rr master
+Username for 'https://github.com': RenRall  
+Password for 'https://RenRall@github.com': 
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 1.21 KiB | 0 bytes/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/RenRall/track-suggester.git
+   508c104..ac22120  master -> master
+Epicodus-8A:track-suggester Guest$ pwd
+/Users/Guest/desktop/track-suggester
+Epicodus-8A:track-suggester Guest$ git remote -v
+rr	https://github.com/RenRall/track-suggester.git (fetch)
+rr	https://github.com/RenRall/track-suggester.git (push)
+Epicodus-8A:track-suggester Guest$ 
